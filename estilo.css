@@ -1,0 +1,51 @@
+body{
+      background-color:gold;
+}
+.behind{
+      background-color:#92C5FC;
+      display:flex;
+      justify-content:flex-end;
+      align-items:flex-start;
+}
+h1{
+     display:inline-block;
+     font-size:30px;
+     font-family:Century Gothic;
+}
+h3{
+     font-size:30px;
+     font-family:Century Gothic;
+     text-align:center;
+}
+#foto{
+     width:350px;
+     height:20;
+     padding:0px;
+     margin-bottom:0px;
+     border-radius:300px;
+     box-shadow:10px 10px 10px gold;
+}
+#inge{
+     align-self:auto;
+}
+#cesar{
+     margin-left:0px;
+     align-self:right;
+}
+h2{
+     text-align:center;
+     font-family:arial;
+}
+.lenguajes{
+     background-color:grey;
+     box-shadow:10px 10px 10px pink;
+     display:inline-block;
+     border:solid 1px;
+     padding-right:50px;
+     border-radius:30px;
+     margin-left:50px;
+}
+.imga{
+     witdth:100px;
+     height:200px;
+}
