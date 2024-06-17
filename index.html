@@ -4,33 +4,109 @@
           <title>Portafolio: César Basilio Gomez</title>
           <link rel="stylesheet" href="normalize.css">
           <link rel="stylesheet" href="estilo.css">
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
      </head>
      <body>
+     
           <div class="behind">
           
           <header class="topic">
-
-               <h1 id="cesar">Cesar Basilio Gomez</h1>
-               <img id="foto" src="profile.jpg">
-	       <h1 id="inge">Software Engineering</h1>
+               <!-- Menu portafilio -->
+               <nav class="menu-principal">
+                    <ul>
+                         <li><a onclick="location.href='#aboutme'">About me</a></li>
+                         <li><a onclick="location.href='#skills'">Skills</a></li>
+                         <li><a href="#skills">Formation</a></li>
+                         <li><a href="projects.html">Projects</a></li>
+                    </ul>
+               </nav>
+               <!--<img id="foto" src="profile.jpg">
+	          <h1 id="inge">Software Engineering</h1>-->
           </header> 
-          </div>
-          <section>
-               <div>
-                    <h2>Lenguajes de programacion </h2>
-               </div>
-	  </section>
-          <section class="lenguajes">
-               <h3>JAVA</h3>
-               <img class="imga" src="https://1000marcas.net/wp-content/uploads/2020/11/Java-logo.png">
+          <section class="contenido-container">
+               <section id="aboutme" class="aboutme-container">
+                    <div class="aboutme-content">
+                         <h2>Hi, I'm César Basilio, a software engineering student at the Universidad Veracruzana.</h2>
+                         <p>Hi, I'm César Basilio Gomez, a software engineering student at the Universidad de los Andes. I am passionate about technology and programming, I am
+                         always looking to learn new things and improve my skills. I am a person who is always looking for new challenges and opportunities to grow.</p>
+                    <div class="botones-redes">
+                         <a href="https://www.linkedin.com/in/cesar-basilio-gomez/" class="boton">
+                              <img class="imagen-red" src="linkedin.svg" alt="">
+                              LinkedIn
+                              <img class="flecha" src="arrow2.svg" alt="">
+                         </a>
+                         <a href="https://github.com/basgomcesar" class="boton">
+                              <img  class="imagen-red" src="github.svg" alt="">
+                              GitHub
+                              <img class="flecha" src="arrow2.svg" alt="">
+                         </a>
+                         <a href="https://instagram.com/cesarbasgom" class="boton">
+                              <img  class="imagen-red" src="insta.svg" alt="">
+                              Instagram
+                              <img class="flecha" src="arrow2.svg" alt="">
+                         </a>
+                    </div>
+                    </div>
+                    <div class="aboutme-imagen">
+                         <img src="profile.png">
+                    </div>
+               </section>
+               <section id="skills" class="skills-container">
+                    <div class="skills-content">
+                         <h2>Skills</h2>
+                         <p>Programming languages:</p>
+                         <ul>
+                              <li>Java</li>
+                              <li>Python</li>
+                              <li>JavaScript</li>
+                         </ul>
+                         <p>Web development:</p>
+                         <ul>
+                              <li>HTML</li>
+                              <li>CSS</li>
+                              <li>React</li>
+                              <li>Angular</li>
+                              <li>Node.js</li>
+                              <li>Django</li>
+                         </ul>
+                         <p>Mobile development:</p>
+                         <ul>
+                              <li>React Native</li>
+                         </ul>
+                         <p>Artificial intelligence:</p>
+                         <ul>
+                              <li>Machine learning</li>
+                              <li>Deep learning</li>
+                         </ul>
+                    </div>
+               </section>
+               <section class="formation-container">
+                    <div class="formation-content">
+                         <h2>Formation</h2>
+                         <p>Software engineering student at the Universidad de los Andes</p>
+                         <p>High school diploma at the Colegio San Carlos</p>
+                    </div>
+               </section>
+               <section class="project-container">
+                    <div class="projects-content">
+                         <h2>Projects</h2>
+                         <p>Web application for the management of a veterinary clinic</p>
+                         <p>Web application for the management of a restaurant</p>
+                         <p>Web application for the management of a gym</p>
+                         <p>Web application for the management of a library</p>
+                    </div>
+               </section>
+               <section class="contact-container">
+                    <div class="contact-content">
+                         <h2>Contact</h2>
+                         <p>Email:</p>
+                    </div>
+               </section>
           </section>
-          <section class="lenguajes">
-               <h3>HTML</h3>
-               <img class="imga" src="https://cdn-icons-png.flaticon.com/512/174/174854.png">
-          </section>
-          <section class="lenguajes">
-               <h3>CSS</h3>
-               <img class="imga" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png">
-          </section>
+          <footer class="footer">
+               <p>© 2021 César Basilio Gomez</p>
+          </footer>
      </body>
 </html>

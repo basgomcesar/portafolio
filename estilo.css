@@ -1,51 +1,121 @@
 body{
-      background-color:gold;
+      background-color:#191919;
+      font-family: 'Manrope', sans-serif;
+      color: white;
 }
-.behind{
-      background-color:#92C5FC;
-      display:flex;
-      justify-content:flex-end;
-      align-items:flex-start;
+.menu-principal{
+     background-color:rgb(0, 0, 0);
+     display: flex;
+     justify-content: right;
+     position: fixed;    
+     top: 0;
+     width: 100%;      
+     z-index: 1000;   
 }
-h1{
-     display:inline-block;
-     font-size:30px;
-     font-family:Century Gothic;
+.menu-principal ul {
+     align-items: center;
+     list-style: none;
+     height: 40px;
+     margin-right:45px ;
+     padding: 0;
+     display: flex;
+ }
+ .menu-principal li {
+     margin: 0;
+     padding: 0;
+ }
+ .menu-principal a {
+     display: block;
+     padding: 15px 20px;
+     color: white;
+     font-family: 'Manrope', sans-serif;
+     text-decoration: none;
+     transition: background-color 0.3s;
+ }
+ .contenido-container{
+     padding-top: 90px;
+     z-index: -1;
+ }
+ .aboutme-container{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-wrap: wrap;
+     margin-top: 50px;
+     margin-left: 100px;
+     margin-bottom: 150px;
+     box-sizing: border-box;
+ }
+ .aboutme-content{
+     flex: 1;
+     width: 70%;
+     margin: 0 70px;
+ }
+ .aboutme-content h2{
+     font-size: 40px;
+     margin-bottom: 20px;
+ }
+ .botones-redes{
+     display: flex;
+     margin-top: 50px;
+ }
+ .boton{
+     justify-content: center;
+     align-items: center;
+     display: flex;
+     text-decoration: none;
+     background-color: #000000;
+     color: white;
+     border: 1px solid white;
+     border-radius: 15px;
+     padding: 10px 20px;
+     margin: 0 10px;
+ }
+ .flecha{
+     margin: 0 0 0 15px;
+ }
+.boton:hover{
+     border-color: #000000;
+     background-color: white;
+     color: black;
+     .imagen-red,.flecha{
+         filter: invert(1);
+     }
 }
-h3{
-     font-size:30px;
-     font-family:Century Gothic;
-     text-align:center;
+.imagen-red{
+     margin: 0 15px 0 0;
+     width: 30px;
+     height: 30px;
 }
-#foto{
-     width:350px;
-     height:20;
-     padding:0px;
-     margin-bottom:0px;
-     border-radius:300px;
-     box-shadow:10px 10px 10px gold;
+ .aboutme-imagen{
+     /* Alinear la imagen al centro*/
+     
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+     margin: 0 30px;
+     flex: 1;   
+     width: 30%;
+ }
+.aboutme-imagen img{
+     border-radius: 50%;
+     background-color: #000000;
+     border: 1px solid white;
+     width: 400px;
+     height: 400px;
+     object-fit: cover;
+     top: 0;
+     left: 0;
+     right: 0;
+     
 }
-#inge{
-     align-self:auto;
-}
-#cesar{
-     margin-left:0px;
-     align-self:right;
-}
-h2{
-     text-align:center;
-     font-family:arial;
-}
-.lenguajes{
-     background-color:grey;
-     box-shadow:10px 10px 10px pink;
-     display:inline-block;
-     border:solid 1px;
-     padding-right:50px;
-     border-radius:30px;
-     margin-left:50px;
-}
-.imga{
-     witdth:100px;
-     height:200px;
-}
+.skills-container{
+     height: 90vh;
+
+     background-color: #000000;
+ }
+ .skills-content{
+display: flex;
+     width: 70%;
+     margin: 0 70px;
+ }
