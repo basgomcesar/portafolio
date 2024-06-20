@@ -1,120 +1,214 @@
-body{
-      background-color:#191919;
-      font-family: 'Manrope', sans-serif;
-      color: white;
+body {
+  background-color: #191919;
+  font-family: "Manrope", sans-serif;
+  color: white;
 }
-.menu-principal{
-     background-color:rgb(0, 0, 0);
-     display: flex;
-     justify-content: right;
-     position: fixed;    
-     top: 0;
-     width: 100%;      
-     z-index: 1000;   
+.menu-principal {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
+.lista-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+}
+.lista-menu li:first-child {
+  margin-right: auto;
+}
+
 .menu-principal ul {
-     align-items: center;
-     list-style: none;
-     height: 40px;
-     margin-right:45px ;
-     padding: 0;
-     display: flex;
- }
- .menu-principal li {
-     margin: 0;
-     padding: 0;
- }
- .menu-principal a {
-     display: block;
-     padding: 15px 20px;
-     color: white;
-     font-family: 'Manrope', sans-serif;
-     text-decoration: none;
-     transition: background-color 0.3s;
- }
- .contenido-container{
-     padding-top: 90px;
-     z-index: -1;
- }
- .aboutme-container{
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-wrap: wrap;
-     margin-top: 50px;
-     margin-left: 100px;
-     margin-bottom: 150px;
-     box-sizing: border-box;
- }
- .aboutme-content{
-     flex: 1;
-     width: 70%;
-     margin: 0 70px;
- }
- .aboutme-content h2{
-     font-size: 40px;
-     margin-bottom: 20px;
- }
- .botones-redes{
-     display: flex;
-     margin-top: 50px;
- }
- .boton{
-     justify-content: center;
-     align-items: center;
-     display: flex;
-     text-decoration: none;
-     background-color: #000000;
-     color: white;
-     border: 1px solid white;
-     border-radius: 15px;
-     padding: 10px 20px;
-     margin: 0 10px;
- }
- .flecha{
-     margin: 0 0 0 15px;
- }
-.boton:hover{
-     border-color: #000000;
-     background-color: white;
-     color: black;
-     .imagen-red,.flecha{
-         filter: invert(1);
-     }
+  align-items: center;
+  list-style: none;
+  height: 40px;
+  margin-right: 45px;
+  padding: 0;
+  display: flex;
 }
-.imagen-red{
-     margin: 0 15px 0 0;
-     width: 30px;
-     height: 30px;
+.menu-principal li {
+  margin: 0;
+  padding: 0;
 }
- .aboutme-imagen{
-     /* Alinear la imagen al centro*/
-     
-     overflow: hidden;
-     display: flex;
-     justify-content: center;
-     margin: 0 30px;
-     flex: 1;   
-     width: 30%;
- }
-.aboutme-imagen img{
-     border-radius: 50%;
-     background-color: #000000;
-     border: 1px solid white;
-     width: 400px;
-     height: 400px;
-     object-fit: cover;
-     top: 0;
-     left: 0;
-     right: 0;
-     
+.menu-principal a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  font-family: "Manrope", sans-serif;
+  text-decoration: none;
+  transition: background-color 0.3s;
 }
-.skills-container{
-     height: 90vh;
-     background-color: #000000;
- }
- .skills-content{
-display: flex;
-     width: 70%;
-     margin: 0 70px;
- }
+.contenido-container {
+  padding-top: 90px;
+  z-index: -1;
+}
+.aboutme-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+}
+.aboutme-content {
+  flex: 1;
+  font-size: 20px;
+  width: 70%;
+  margin: 0 70px;
+  border-right: 1.9px solid white;
+  padding-right: 50px;
+}
+.aboutme-content b {
+  color: #00b8a3;
+}
+.aboutme-content h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.botones-redes {
+  display: flex;
+  margin-top: 50px;
+}
+.boton {
+  justify-content: center;
+  justify-self: end;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  background-color: #000000;
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  margin-bottom: 10 px;
+}
+.flecha {
+  margin: 0 0 0 15px;
+}
+.boton:hover {
+  border-color: #000000;
+  background-color: #ffffff;
+  color: black;
+  .imagen-red,
+  .flecha {
+    filter: invert(1);
+  }
+}
+.imagen-red {
+  margin: 0 15px 0 0;
+  width: 30px;
+  height: 30px;
+}
+.aboutme-imagen {
+  /* Alinear la imagen al centro*/
+
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin: 0 30px;
+  flex: 1;
+  width: 30%;
+}
+.aboutme-imagen img {
+  border-radius: 50%;
+  background-color: #000000;
+  border: 1px solid #006e66;
+  width: 400px;
+  height: 400px;
+  object-fit: contain;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+.skills-container {
+  margin-top: 50px;
+  flex-basis: 45%;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: top;
+  height: 100vh;
+  background-color: #000000;
+  margin: 0 auto;
+}
+.skills-content,
+.skills-tools {
+  margin-top: 50px;
+  flex-basis: 45%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  display: flex;
+}
+.skills-container ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills-container li {
+  margin: 10px;
+  overflow: hidden;
+  padding: 10px;
+  background-color: #191919;
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  height: auto;
+}
+.imagen-skill {
+  flex: 1;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 15px;
+}
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+}
+.project-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+.project-element {
+  width: 300px;
+  height: auto;
+  margin: 0 30px 30px 0;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #000000;
+  overflow: hidden;
+}
+.imagen-project {
+  width: 300px;
+    height: 200px;
+    object-fit: cover;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.formation-container {
+    background-color: #000000;
+    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  box-sizing: border-box;
+}
