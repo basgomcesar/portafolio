@@ -281,12 +281,16 @@ body {
   font-weight: bold;
   margin-bottom: 8px;
 }
-.contact-container {
-  display: flex;
+.contact-container {  
+  text-align: center;
+}
+.contact-content {
+ display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 50px;
+  margin-left: 100px;
   margin-bottom: 100px;
   box-sizing: border-box;
 }
@@ -294,10 +298,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   background-color: #000000;
   border: 1px solid white;
   margin: 0 30px;
+}
+.imagen-contacto{
+  width: 60%;
+}
+.footer{
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  box-sizing: border-box;
 }
