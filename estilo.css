@@ -174,7 +174,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 50px;
-  margin-left: 100px;
   margin-bottom: 100px;
   box-sizing: border-box;
 }
@@ -290,7 +289,6 @@ body {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 50px;
-  margin-left: 100px;
   margin-bottom: 100px;
   box-sizing: border-box;
 }
@@ -305,15 +303,87 @@ body {
   border: 1px solid white;
   margin: 0 30px;
 }
+.circulo-contacto:hover{
+  background-color: white;
+  .imagen-contacto{
+    filter: invert(1);
+  }
+}
 .imagen-contacto{
   width: 60%;
 }
 .footer{
-  background-color: #000000;
+  background-color: #352a2a;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 50px;
   box-sizing: border-box;
+}
+
+/* AJUSTAR TAMAÑO PARA CELULAR */
+@media (min-width: 600px) and (max-width: 1023px){
+  .aboutme-container {
+    
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .aboutme-content {
+    width: 100%;
+    margin: 0;
+    border-right: none;
+    padding-right: 0;
+  }
+
+  .aboutme-imagen {
+    width: 100%;
+    margin: 0;
+  }
+
+  .skills-container {
+    width: 100%;
+    height: fit-content;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .skills-content,
+  .skills-tools {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .skills-container ul {
+    justify-content: center;
+  }
+
+  .project-container {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+  .imagen-project{
+    width: 100%;
+    height: auto;
+  }
+
+  .project-element {
+    width: 60%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .contact-container {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
+
+  .footer {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+  }
 }

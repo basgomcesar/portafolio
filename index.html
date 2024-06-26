@@ -2,12 +2,18 @@
 <html>
 
 <head>
-     <title>Portafolio: César Basilio Gomez</title>
+     <title>Portfolio: César Basilio Gomez</title>
      <link rel="stylesheet" href="normalize.css">
      <link rel="stylesheet" href="estilo.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+     <style>
+          /* Additional CSS for centering h2 */
+          .centered-container h2 {
+               text-align: center;
+          }
+     </style>
 </head>
 
 <body>
@@ -15,7 +21,7 @@
      <div class="behind">
 
           <header class="topic">
-               <!-- Menu portafilio -->
+               <!-- Portfolio Menu -->
                <nav class="menu-principal">
                     <ul class="lista-menu">
                          <li><a>César Basilio Gomez</a></li>
@@ -25,8 +31,6 @@
                          <li><a href="projects.html">Projects</a></li>
                     </ul>
                </nav>
-               <!--<img id="foto" src="profile.jpg">
-	          <h1 id="inge">Software Engineering</h1>-->
           </header>
           <section class="contenido-container">
                <section id="aboutme" class="aboutme-container">
@@ -37,15 +41,15 @@
                               skills in real-world projects.
                          </p>
                          <div class="botones-redes">
-                              <a href="https://www.linkedin.com/in/cesar-basilio-gomez/" class="boton">
-                                   <img class="imagen-red" src="linkedin.svg" alt="">
-                                   LinkedIn
-                                   <img class="flecha" src="arrow2.svg" alt="">
-                              </a>
-                              <a href="https://github.com/basgomcesar" class="boton">
+                              <a href="https://github.com/basgomcesar/" class="boton">
                                    <img class="imagen-red" src="github.svg" alt="">
                                    GitHub
                                    <img class="flecha" src="arrow2.svg" alt="">
+                              </a>
+                              <a href="https://facebook.com/xezar.bg/" class="boton">
+                                   <img class="imagen-red" src="facebookIcon.svg" alt="">
+                                   Facebook
+                                   <img class="flecha" class="flecha" src="arrow2.svg" alt="">
                               </a>
                               <a href="https://instagram.com/cesarbasgom" class="boton">
                                    <img class="imagen-red" src="insta.svg" alt="">
@@ -112,8 +116,8 @@
                          <div class="project-element">
                               <img class="imagen-project" src="project01.png" alt="">
                               <h3>Hangman game</h3>
-                              <p>Hangman game developed in .NET whith WPF and WCF</p>
-                              <!-- ir al github  -->
+                              <p>Hangman game developed in .NET with WPF and WCF</p>
+                              <!-- go to GitHub -->
                               <a href="https://github.com/BenjaminGarcia754/Ahorcado_Services" target="_blank" class="boton">
                                    <img class="imagen-red" src="github.svg" alt="">
                                    GitHub
@@ -134,17 +138,17 @@
                          <div class="project-element">
                               <img class="imagen-project" src="proyecto03.png" alt="">
                               <h3>SGEMEC Project</h3>
-                              <p>Software para gestionar una empresa de mantenimiento correctivo y preventivo de equipos de cómputo</p>
+                              <p>Software to manage a company providing corrective and preventive maintenance for computer equipment</p>
                               <a href="https://github.com/JesusRodriguezCortes/Proyecto_SGMEC" target="_blank" class="boton">
                                    <img class="imagen-red" src="github.svg" alt=""> GitHub <img class="flecha"
                                         src="arrow2.svg" alt="">
                               </a>
                          </div>
-                         <!-- encriptador alura latam -->
+                         <!-- Alura Latam encryptor -->
                          <div class="project-element">
                               <img class="imagen-project" src="proyecto04.png" alt="">
                               <h3>Alura Latam Encryptor</h3>
-                              <p>Encryptor for Alura Latam</p>
+                              <p>Encryptor for Alura Latam, using HTML, CSS and JavaScript</p>
                               <div class="botones-container">
                                    <a href="https://github.com/basgomcesar/encriptador" target="_blank" class="boton">
                                         <img class="imagen-red" src="github.svg" alt=""> GitHub <img class="flecha"
@@ -152,13 +156,20 @@
                                    </a>
                                    <!-- deploy -->
                                    <a class="boton" href="https://basgomcesar.github.io/encriptador/">Deploy</a>
-                               </div>
+                              </div>
                          </div>
                </section>
-               <section class="formation-container">
+               <section class="formation-container centered-container">
                     <div class="formation-content">
                          <h2>Formation</h2>
                          <ul>
+                              <li>
+                                   <div>
+                                        <h3>Front-end Developer</h3>
+                                        <p>Alura ONE</p>
+                                        <p class="fecha">2023 - Present</p>
+                                   </div>
+                              </li>
                               <li>
                                    <div>
                                         <h3>Software Engineering</h3>
@@ -166,17 +177,10 @@
                                         <p class="fecha">2021 - Present</p>
                                    </div>
                               </li>
-                              <li>
-                                   <div>
-                                        <h3>Alura ONE</h3>
-                                        <p>Udemy</p>
-                                        <p class="fecha">2021</p>
-                                   </div>
-                              </li>
                          </ul>
                     </div>
                </section>
-               <section class="contact-container">
+               <section class="contact-container centered-container">
                     <h2>Contact</h2>
                     <div class="contact-content">
                          <a href="https://wa.me/529221914346/" class="circulo-contacto">
@@ -185,12 +189,20 @@
                          <a href="mailto:cesarbasiliogomez@gmail.com" class="circulo-contacto">
                               <img class="imagen-contacto" src="email-Icon.svg" alt="">
                          </a>
+                         <a href="https://www.linkedin.com/in/cesar-basilio-gomez/" class="circulo-contacto">
+                              <img class="imagen-contacto" src="linkedin.svg" alt="">
+                         </a>
+                         <!-- facebook -->
+                         <a href="https://facebook.com/xezar.bg/" class="circulo-contacto">
+                              <img class="imagen-contacto" src="facebookIcon.svg" alt="">
+                         </a>
                     </div>
                </section>
           </section>
           <footer class="footer">
                <p>© 2024 César Basilio Gomez</p>
           </footer>
+     </div>
 </body>
 
 </html>
